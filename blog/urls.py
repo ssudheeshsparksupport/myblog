@@ -12,4 +12,5 @@ urlpatterns = patterns('',
     url(r'^post_edit/(?P<id>\d+)/$', views.post_edit, name='post_edit'),
     url(r'^logout/$', views.logout_view, name='logout_view'),
     url(r'^passwordchange/$', views.passwordchange, name='passwordchange'),
+    url(r'^test/$', views.test, name='test'),
 )
