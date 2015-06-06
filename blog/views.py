@@ -109,6 +109,9 @@ def passwordchange(request):
     print('AAAAA')
     return render(request, 'blog/passwordchange.html')
 
+def test(request):
+    return HttpResponse('success')
+
 def logout_view(request):
     logout(request)
     return redirect('/user_login/')
