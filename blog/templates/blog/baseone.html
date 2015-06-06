@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en" ng-app>
+{% load staticfiles %}
+<head>
+  
+     
+     <!-- Bootstrap -->
+     <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap-theme.min.css">
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+<link href="{% static "blog/app.css" %}" rel="stylesheet">
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+   
+     <script src="{% static "blog/js/bootstrap.min.js"%}"></script>
+     <script src="{% static "blog/css/bootstrap.min.js"%}"></script>
+    
+    <nav class="navbar navbar-default" role="navigation">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        
+      </ul>
+      
+      <ul class="nav navbar-nav navbar-right">
+        
+        <li><a href='/user_reg/'>Register</a></li>
+        
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+
+
+</head>
+<div id="footer" class="container">
+    <nav class="navbar navbar-default navbar-fixed-bottom">
+        <div class="navbar-inner navbar-content-center">
+            <!--p class="text-muted credit">Example courtesy <a href="http://martinbean.co.uk">Martin Bean</a> and <a href="http://ryanfait.com/sticky-footer/">Ryan Fait</a>.</p-->
+        </div>
+    </nav>
+</div>
+  </head>
+<link type="text/css" rel="stylesheet" href="bootstrap.css">
+<style>
+.form-control {
+    width: 210px;
+    height: 44px;
+    margin-bottom: 10px;
+    line-height: 30px;
+    padding: 11px 19px;
+    font-size: 17.5px;
+}
+.btn-lg {
+  width: 210px;
+    height: 44px;
+    margin-bottom: 10px;
+    line-height: 30px;
+    padding: 11px 19px;
+    font-size: 17.5px; 
+}
+.form-signin {
+    width: 300px;
+    margin: 0 auto;
+}
+</style>
+
+<body>
+  
+
+    <div id="content">
+        {% block content %}{% endblock %}
+    </div>
+</body>
+</html>

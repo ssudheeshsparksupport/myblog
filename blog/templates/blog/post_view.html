@@ -1,0 +1,21 @@
+{% extends "blog/base.html" %}
+{% block content %}
+
+<div align="center">
+
+  
+ <table>
+ <tr><td><h1>Details</h1></td></tr>
+
+<tr><td>Title</td><td>{{post.title}}</td></tr>
+<tr><td>Author</td><td>{{ user.username }}</td></tr>
+<tr><td>Photo:</td><td><img src="/media/{{post.photo}}"></td></tr>
+<tr><td>Content</td><td>{{post.content}}</td></tr>
+<tr><td>Created</td><td>{{post.created}}</td></tr>
+<tr><td>Updated</td><td>{{post.updated}}</td></tr>
+<tr><td>Published</td><td>{{post.published}}</td></tr>
+
+</table>
+<a href="/post_edit/{{post.id}}"><p>Edit</p></a>
+</div>
+{% endblock %}
