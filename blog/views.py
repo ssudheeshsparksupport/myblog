@@ -112,6 +112,11 @@ def passwordchange(request):
 def test(request):
     return HttpResponse('success')
 
+def test1(request):
+    return HttpResponse('hello')
+
+
+
 def logout_view(request):
     logout(request)
     return redirect('/user_login/')
